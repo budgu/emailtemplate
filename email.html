@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Bootstrap Email Template</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row w-100">
+        <!--column 1: nav bar-->
+        <div class="col-sm-12 col-md-4 col-lg-3 col-one">
+          <h2>Welcome, Helen</h2>
+          
+          <button type="button" class="btn btn-warning">Compose</button>
+          <button type="button" class="btn btn-primary"> Inbox <span class="badge badge-light">2</span><span class="sr-only">unread messages</span>
+          </button>
+
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Saved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Drafts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Sent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Trash</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!--column 2: email list-->
+        <div class="col-sm-12 col-md-8 col-lg-3 col-two">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search emails">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <ul class="list-group">
+            <li class="list-group-item" aria-current="true"><strong>XFINITY offer</strong><br>Congrats! You now have great WiFi for your home. Switch to Xfinity app today.</li>
+            <li class="list-group-item"><strong>Taco Bell</strong><br>Sleeping in? You’re missing out on $1 off breakfast 🍳 😋</li>
+            <li class="list-group-item active"><strong>Riot Games</strong><br>Here is your login approval code:</li>
+          </ul>
+        </div>
+
+        <!--column 3: open email and reply box-->
+        <div class="col-sm-12 col-md-12 col-lg-6 col-three">
+          <h6>To: valorant_enjoyer@gmail.com</h6>
+          <h6>From: noreply@mail.accounts.riotgames.com</h6>
+          <h3><strong>Login Code</strong></h3>
+          <p class="message">Login Code <br>
+            Here is your login approval code:<br>
+            
+            632032<br>
+            If this request did not come from you, change your account password immediately to prevent further unauthorized access. Read Protecting Your Account for tips on password strength.	
+            </p>
+      
+          <textarea id="story" name="story" rows="5" cols="75"> Type your response here </textarea>
+          <div class="btn-toolbar" role="group">
+            <button type="button" class="btn" id="reply" checked>
+            <label class="btn btn-outline-primary" for="reply">Reply</label>
+
+            <button type="button" class="btn" id="attach">
+            <label class="btn btn-outline-primary" for="attach">Attach</label>
+
+          
+
+         
+            <button type="button" class="btn " id="discard" >
+            <label class="btn btn-outline-danger" for="discard">Discard</label>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
